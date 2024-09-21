@@ -1,7 +1,7 @@
 import * as Buttone from './styles'
 
 export const BotaoGeral = () => {
-  return <Buttone.Botao>Adicionar Contato Novo</Buttone.Botao>
+  return <Buttone.Botao href="/novo">Adicionar Contato Novo</Buttone.Botao>
 }
 
 export const BotaoRemov = () => {

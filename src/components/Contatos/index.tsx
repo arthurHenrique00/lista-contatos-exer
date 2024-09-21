@@ -1,15 +1,28 @@
+import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 import * as C from './styles'
 
-const CardContato = () => (
-  <C.Card>
-    <C.ContactName>Arthur</C.ContactName>
-    <C.ContactEmail>arthurcostalima@gmail.com</C.ContactEmail>
-    <C.ContactTel>44 9999-9999</C.ContactTel>
-    <C.BarraAcao>
-      <C.Botao />
-      <C.Botao />
-    </C.BarraAcao>
-  </C.Card>
-)
+type Props = {
+  nome?: string
+  email?: string
+  tele?: number
+  id?: number
+}
 
-export default CardContato
+const Contato = ({ nome, email, tele }: Props) => {
+  const dispatch = useDispatch()
+
+  return (
+    <C.Card>
+      <C.ContactName>{nome}</C.ContactName>
+      <C.ContactEmail>{email}</C.ContactEmail>
+      <C.ContactTel>{tele}</C.ContactTel>
+      <C.BarraAcao>
+        <C.Botao>Editar</C.Botao>
+        <C.BotaoRe>Remover</C.BotaoRe>
+      </C.BarraAcao>
+    </C.Card>
+  )
+}
+
+export default Contato

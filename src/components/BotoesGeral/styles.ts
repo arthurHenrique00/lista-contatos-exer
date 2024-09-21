@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Botao = styled.button`
+export const Botao = styled.a`
   background-color: black;
   color: white;
   font-size: 12px;
@@ -8,8 +8,8 @@ export const Botao = styled.button`
   padding: 8px 12px;
   font-weight: bold;
   cursor: pointer;
+  text-decoration: none;
 `
-
 export const BotaoPop = styled.button`
   background-color: red;
   color: white;

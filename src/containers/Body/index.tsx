@@ -1,16 +1,10 @@
-import CardContato from '../../components/Contatos'
+import Contato from '../../components/Contatos'
 import { ListaDeContatos } from './styles'
 
 const ListaContatos = () => (
   <ListaDeContatos>
     <li>
-      <CardContato />
-    </li>
-    <li>
-      <CardContato />
-    </li>
-    <li>
-      <CardContato />
+      <Contato />
     </li>
   </ListaDeContatos>
 )
