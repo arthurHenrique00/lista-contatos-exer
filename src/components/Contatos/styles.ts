@@ -9,15 +9,15 @@ export const Card = styled.div`
   text-align: center;
 `
 
-export const ContactName = styled.h3`
+export const ContactName = styled.textarea`
   font-size: 18px;
 `
 
-export const ContactEmail = styled.h3`
+export const ContactEmail = styled.textarea`
   display: block;
 `
 
-export const ContactTel = styled.h3``
+export const ContactTel = styled.textarea``
 
 export const BarraAcao = styled.div`
   padding: 12px;
